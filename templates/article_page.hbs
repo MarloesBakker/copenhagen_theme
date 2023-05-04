@@ -54,7 +54,7 @@
           {{/if}}
         </h1>
 
-        <div class="article-author">
+        {{!-- <div class="article-author">
           {{#if settings.show_article_author}}
             <div class="avatar article-avatar">
               {{#if article.author.agent}}
@@ -85,7 +85,7 @@
 
         {{#if settings.show_follow_article}}
           <div class="article-subscribe">{{subscribe}}</div>
-        {{/if}}
+        {{/if}} --}}
       </header>
 
       <section class="article-info">
@@ -146,7 +146,7 @@
             {{/if}}
           {{/if}}
         </div>
-        {{#with article}}
+        {{!-- {{#with article}}
           <div class="article-votes">
             <span class="article-votes-question" id="article-votes-label">{{t 'was_this_article_helpful'}}</span>
             <div class="article-votes-controls" role="group" aria-labelledby="article-votes-label">
@@ -157,11 +157,11 @@
               {{vote 'label' class='article-vote-label'}}
             </small>
           </div>
-        {{/with}}
+        {{/with}} --}}
 
-        <div class="article-more-questions">
+        {{!-- <div class="article-more-questions">
           {{request_callout}}
-        </div>
+        </div> --}}
         <div class="article-return-to-top">
           <a href="#article-container">
             {{t 'return_to_top'}}

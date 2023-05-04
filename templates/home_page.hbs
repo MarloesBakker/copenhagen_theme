@@ -2,6 +2,10 @@
 
 <section id="main-content" class="section hero">
   <div class="hero-inner">
+      <h1>Compaan Partner Helpcentrum</h1>
+      <h3>Vragen? info@uwcompaan.nl of bel 088-1450100</h3>  
+  </div>    
+  <div class="hero-inner">
     <h2 class="visibility-hidden">{{ t 'search' }}</h2>
     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
       <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
@@ -12,7 +16,8 @@
 </section>
 
 <div class="container">
-  <section class="section knowledge-base">
+   <h2 class="text-center">Waar gaat uw vraag over?</h2>
+   <section class="section knowledge-base">
     <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
     <section class="categories blocks">
       <ul class="blocks-list">
@@ -20,6 +25,13 @@
           {{#if ../has_multiple_categories}}
             <li class="blocks-item">
               <a href='{{url}}' class="blocks-item-link">
+
+                {{#is id 13801181428497}}<img class="" src="{{asset 'ICN-clientbeheer.png'}}" />{{/is}}
+								{{#is id 13801266376465}}<img class="" src="{{asset 'ICN-medewerkersbeheer.png'}}" />{{/is}}
+                {{#is id 13801268137233}}<img class="" src="{{asset 'ICN-beeldzorg.png'}}" />{{/is}}
+                {{#is id 13801269214097}}<img class="" src="{{asset 'ICN-rapportages.png'}}" />{{/is}}
+                {{#is id 13801227614097}}<img class="" src="{{asset 'ICN-overCompaan.png'}}" />{{/is}}
+                {{#is id 13801229074193}}<img class="" src="{{asset 'ICN-inspiratie.png'}}" />{{/is}}              
                 <span class="blocks-item-title">{{name}}</span>
                 <span class="blocks-item-description">{{excerpt description}}</span>
               </a>
